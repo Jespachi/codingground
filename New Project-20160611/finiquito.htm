@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="maincss.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Desert Emporio</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="index.htm">Home</a></li>
+              <li class="active"><a href="#">Finiquitos</a></li>
+              <li><a href="#">Liquidacion</a></li> 
+              <li><a href="#">Nomina</a></li> 
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-md-12" id="padleft-30">
+            <h1><strong>Calculadora de Finiquitos</strong> <small>por Desert Emporio</small></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="container cl-md-6">
+        <form class="cl-md-6">
+              <div class="form-group">
+                <label for="salarioDiario">Salario Diario</label>
+                <span id="ayudaSalarioDiario" class="help-block">Si el pago es semanal, dividir el total del pago semanal entre 7 para obtener el salario diario. En caso de que el pago sea quincenal, seguir los mismos pasos pero dividiendo entre 15. Para pago catorcenal, dividir entre 14. En caso de pago mensual, dividir entre 30.5.</span>
+                <div class="input-group">
+                    <div class="input-group-addon">$</div>
+                    <input type="number" class="form-control" id="salarioDiario" placeholder="Ingresar el salario diario" aria-describedby="ayudaSalarioDiario" />
+                </div>  
+              </div>
+              <div class="form-group">
+                <label for="diasAguinaldo">Dias de aguinaldo</label>
+                <span id="ayudaAguinaldo" class="help-block">Ingresar aquí la cantidad de días de aguinaldo que la empresa otorga anualmente. En caso de no contar con la información, ingresar "15", que es el número de días mínimos de aguinaldo por ley.</span>
+                <input type="number" class="form-control" id="diasAguinaldo" placeholder="Ingresar el numero de dias de aguinaldo" />
+              </div>
+              <div class="form-group">
+                <label for="diasTrabajados">Dias trabajados</label>
+                <input type="number" class="form-control" id="diasTrabajados" placeholder="Ingresar el numero de dias trabajados" />
+              </div>
+              <div class="form-group">
+                <label for="añosTrabajados">Años de antigüedad</label>
+                <input type="number" class="form-control" id="añosTrabajados" placeholder="Ingresar el numero de años de antigüedad" />
+              </div>
+              <button type="submit" class="btn btn-default">Calcular</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
