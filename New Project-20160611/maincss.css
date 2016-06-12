@@ -1,0 +1,17 @@
+/* Main CSS for Calculadoras */
+
+body {
+    font-family: lato, helvetica, sans-serif;
+}
+
+#padleft-30 {
+    padding-left: 30px;
+}
+
+.padbottom-30 {
+    padding-bottom: 30px;
+}
+
+#wrapped-text {
+    white-space: normal;
+}
